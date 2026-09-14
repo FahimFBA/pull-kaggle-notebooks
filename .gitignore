@@ -2,3 +2,4 @@ __pycache__/
 *.pyc
 kaggle_notebooks/
 .venv
+.pytest_cache/
