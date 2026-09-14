@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Pull Kaggle Notebooks — download every public notebook attached to a Kaggle dataset, with live progress and organized metadata." />
+  <meta name="theme-color" content="#07111f" />
+  <title>Pull Kaggle Notebooks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav wrap">
+    <a class="brand" href="#top" aria-label="Pull Kaggle Notebooks home">
+      <span class="brand-mark">PK</span>
+      <span>Pull Kaggle Notebooks</span>
+    </a>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#quickstart">Quick start</a>
+      <a class="nav-github" href="https://github.com/FahimFBA/pull-kaggle-notebooks" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> OPEN SOURCE • PYTHON • KAGGLE</div>
+        <h1>Pull every public<br><em>Kaggle notebook.</em></h1>
+        <p class="lead">Download the notebooks attached to a Kaggle dataset, keep their metadata, and explore them locally — without downloading them one by one.</p>
+        <div class="actions">
+          <a class="button primary" href="#quickstart">Get started <span>→</span></a>
+          <a class="button secondary" href="https://github.com/FahimFBA/pull-kaggle-notebooks" target="_blank" rel="noreferrer">View on GitHub <span>↗</span></a>
+        </div>
+        <div class="terminal-mini"><span class="prompt">$</span> python pull_kaggle_notebooks.py</div>
+      </div>
+      <div class="hero-art">
+        <div class="glow"></div>
+        <img src="assets/hero.png" alt="Pull Kaggle Notebooks visual showing notebooks moving from Kaggle to a local folder" />
+      </div>
+    </section>
+
+    <section class="stats wrap">
+      <div><strong>1 URL</strong><span>to start</span></div>
+      <div><strong>All public</strong><span>notebooks</span></div>
+      <div><strong>Live</strong><span>download progress</span></div>
+      <div><strong>Organized</strong><span>local output</span></div>
+    </section>
+
+    <section id="features" class="section wrap">
+      <div class="section-heading">
+        <div class="eyebrow">WHY IT EXISTS</div>
+        <h2>From dataset to<br>notebook collection.</h2>
+        <p>Pull Kaggle Notebooks turns a repetitive browsing-and-downloading task into a simple local workflow.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="card"><div class="icon">↓</div><h3>Bulk downloads</h3><p>Download every public notebook attached to the dataset you provide.</p></article>
+        <article class="card"><div class="icon">◉</div><h3>Kaggle auth</h3><p>Use your Kaggle username and API key to access the notebook listings.</p></article>
+        <article class="card"><div class="icon">▤</div><h3>Metadata preserved</h3><p>Keep notebook metadata alongside each downloaded notebook for easier exploration.</p></article>
+        <article class="card"><div class="icon">↯</div><h3>Live progress</h3><p>See what is happening while notebooks are being discovered and downloaded.</p></article>
+      </div>
+    </section>
+
+    <section id="how" class="section process-section">
+      <div class="wrap">
+        <div class="section-heading centered">
+          <div class="eyebrow">HOW IT WORKS</div>
+          <h2>A small tool with a clear job.</h2>
+        </div>
+        <div class="steps">
+          <div class="step"><span>01</span><h3>Give it a dataset</h3><p>Paste a Kaggle dataset URL or use its <code>owner/dataset</code> slug.</p></div>
+          <div class="connector">→</div>
+          <div class="step"><span>02</span><h3>Authenticate</h3><p>Provide the Kaggle username and API key from your Kaggle account.</p></div>
+          <div class="connector">→</div>
+          <div class="step"><span>03</span><h3>Download</h3><p>The tool finds public notebooks and downloads them with progress feedback.</p></div>
+          <div class="connector">→</div>
+          <div class="step"><span>04</span><h3>Explore</h3><p>Each notebook gets its own folder with the notebook and metadata.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quickstart" class="section wrap quickstart">
+      <div class="quick-copy">
+        <div class="eyebrow">QUICK START</div>
+        <h2>Up and running in minutes.</h2>
+        <p>Clone the repository, install its dependencies, then run the script. It will prompt you for the dataset and credentials.</p>
+        <a href="https://github.com/FahimFBA/pull-kaggle-notebooks" target="_blank" rel="noreferrer">Read the full documentation on GitHub →</a>
+      </div>
+      <div class="code-card">
+        <div class="code-top"><span></span><span></span><span></span><label>terminal</label></div>
+        <pre><code><b>$</b> git clone https://github.com/FahimFBA/pull-kaggle-notebooks.git
+<b>$</b> cd pull-kaggle-notebooks
+<b>$</b> pip install -r requirements.txt
+<b>$</b> python pull_kaggle_notebooks.py
+
+<span class="comment"># Enter your dataset, Kaggle credentials,</span>
+<span class="comment"># and output directory when prompted.</span></code></pre>
+      </div>
+    </section>
+
+    <section class="section wrap use-cases">
+      <div class="section-heading centered">
+        <div class="eyebrow">USE CASES</div>
+        <h2>More notebooks. More ways to learn.</h2>
+        <p>Useful when you want to study how different people approach the same data.</p>
+      </div>
+      <div class="pill-row"><span>Learning</span><span>Research</span><span>Benchmarking</span><span>Exploration</span><span>ML experimentation</span><span>Reproducibility</span></div>
+    </section>
+
+    <section class="cta wrap">
+      <div>
+        <div class="eyebrow">OPEN SOURCE</div>
+        <h2>Explore the code.</h2>
+        <p>Have an idea, found a bug, or want to improve the workflow? Contributions are welcome.</p>
+      </div>
+      <a class="button primary" href="https://github.com/FahimFBA/pull-kaggle-notebooks" target="_blank" rel="noreferrer">Open repository ↗</a>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <div>© <span id="year"></span> FahimFBA · MIT License</div>
+    <div><a href="https://github.com/FahimFBA/pull-kaggle-notebooks" target="_blank" rel="noreferrer">GitHub</a> · Built for curious data scientists.</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

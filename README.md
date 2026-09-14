@@ -4,6 +4,8 @@
 
 Download every public notebook attached to a Kaggle dataset, with a live progress UI.
 
+🔗 [Landing page](https://fahimfba.github.io/pull-kaggle-notebooks/)
+
 ## Features
 
 - Just provide a dataset link — no need to look up individual notebook URLs
